@@ -1,9 +1,16 @@
+import { useState } from 'react'
 import FormularioGasto from './components/FormularioGasto.jsx'
 import ListaGastos from './components/ListaGastos.jsx'
 import TotalGastos from './components/TotalGastos.jsx'
 import './App.css'
 
 function App() {
+  const [gastos, setGastos] = useState([])
+
+  function adicionarGasto(novoGasto) {
+    setGastos((gastosAtuais) => [...gastosAtuais, novoGasto])
+  }
+
   return (
     <main className="pagina">
       <header className="cabecalho">
@@ -23,7 +30,7 @@ function App() {
               <p>Registre uma despesa</p>
             </div>
           </div>
-          <FormularioGasto />
+          <FormularioGasto aoAdicionar={adicionarGasto} />
         </section>
 
         <section className="cartao lista-cartao" aria-labelledby="titulo-lista">
@@ -32,9 +39,11 @@ function App() {
               <h2 id="titulo-lista">Seus gastos</h2>
               <p>Despesas registradas</p>
             </div>
-            <span className="contador-gastos">0 itens</span>
+            <span className="contador-gastos">
+              {gastos.length} {gastos.length === 1 ? 'item' : 'itens'}
+            </span>
           </div>
-          <ListaGastos />
+          <ListaGastos gastos={gastos} />
         </section>
 
         <TotalGastos />

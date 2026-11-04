@@ -121,6 +121,16 @@
   box-shadow: 0 0 0 3px rgb(107 155 121 / 14%);
 }
 
+.formulario input[aria-invalid="true"] {
+  border-color: #c84949;
+}
+
+.mensagem-erro {
+  margin: -4px 0 14px;
+  color: #b33434;
+  font-size: 0.82rem;
+}
+
 .campo-valor {
   position: relative;
 }
@@ -206,6 +216,70 @@
   margin-top: 6px;
   color: #929c95;
   font-size: 0.8rem;
+}
+
+.lista-itens {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item-gasto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 0;
+  border-bottom: 1px solid #edf0ed;
+}
+
+.item-gasto:last-child {
+  border-bottom: 0;
+}
+
+.detalhes-gasto {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 12px;
+}
+
+.icone-gasto {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 11px;
+  background: #f1f5f2;
+  color: #62816b;
+}
+
+.descricao-gasto {
+  overflow: hidden;
+  margin: 0;
+  color: #405147;
+  font-size: 0.88rem;
+  font-weight: 650;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.categoria-gasto {
+  display: inline-block;
+  margin-top: 4px;
+  color: #929c95;
+  font-size: 0.76rem;
+}
+
+.valor-gasto {
+  flex: 0 0 auto;
+  color: #34493b;
+  font-size: 0.88rem;
+  font-weight: 650;
 }
 
 .cartao-total {

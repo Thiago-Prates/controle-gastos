@@ -22,9 +22,9 @@ Resposta: Ele separou os componentes em arquivos dentro de `src/components` e us
 
 ## Missão 1 · Adicionar
 M1.1 Como o app trata "12,50" com vírgula? Quem decidiu isso: você ou o agente?
-Resposta:
+Resposta: Aceita a vírgula para representar decimal, por exemplo `12,50` é convertido para 12,5 e exibido como `R$ 12,50`. Eu decidi isso passando a instrução para ele considerando o teste da missão.
 M1.2 Quantas tool calls a missão usou?
-Resposta:
+Resposta: 15 chamadas de ferramenta, contando cada operação executada dentro das chamadas paralelas.
 
 ## Missão 2 · Total
 M2.1 Quanto deu 0,10 + 0,20 no app?
