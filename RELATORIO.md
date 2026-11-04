@@ -28,9 +28,9 @@ Resposta: 15 chamadas de ferramenta, contando cada operação executada dentro d
 
 ## Missão 2 · Total
 M2.1 Quanto deu 0,10 + 0,20 no app?
-Resposta:
+Resposta: Deu R$ 0,30, ao adicionar 0,10 e depois 0,20. O total é atualizado, somando os valores em centavos inteiros.
 M2.2 Por que 0.1 + 0.2 não dá exatamente 0.3 no JavaScript?
-Resposta:
+Resposta: As aproximações fazem 0.1 + 0.2 resultar em                0.30000000000000004; somar centavos inteiros evita esse problema nos cálculos monetários usuais.
 
 ## Missão 3 · Remover
 M3.1 O agente mudou algo que você não pediu? O quê?

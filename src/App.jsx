@@ -6,6 +6,10 @@ import './App.css'
 
 function App() {
   const [gastos, setGastos] = useState([])
+  const totalCentavos = gastos.reduce(
+    (soma, gasto) => soma + Math.round(gasto.valor * 100),
+    0,
+  )
 
   function adicionarGasto(novoGasto) {
     setGastos((gastosAtuais) => [...gastosAtuais, novoGasto])
@@ -46,7 +50,7 @@ function App() {
           <ListaGastos gastos={gastos} />
         </section>
 
-        <TotalGastos />
+        <TotalGastos totalCentavos={totalCentavos} />
       </div>
     </main>
   )
