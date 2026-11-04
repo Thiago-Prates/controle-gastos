@@ -52,10 +52,10 @@ Resposta: Cada navegador e perfil possui seu próprio armazenamento. O localStor
 
 ## Reflexão final
 R.1 Sem olhar o código, explique como um dos seus componentes recebe e altera os gastos.
-Resposta:
+Resposta: A lista recebe os gastos do componente principal por propriedades e mostra cada item. Ao clicar em Remover, ela chama uma função passando o id do gasto. O componente atualiza o estado, e a lista e o total refletem a mudança.
 R.2 Em que momento você aceitou algo sem entender?
-Resposta:
+Resposta: Sinceramente fui validando tudo em cada etapa da missão, então ele gerava e eu revisava o que foi feito, acredito que entendi bem o funcionamento implementado.
 R.3 Quais decisões foram suas e quais foram do agente?
-Resposta:
+Resposta: Eu defini as regras do projeto e os requisitos das missões. O agente escolheu os detalhes técnicos e planejou, por fim eu também fiquei responsável por validar e autorizar as implementações.
 R.4 O que continuaria valendo se você trocasse o modelo?
-Resposta:
+Resposta: Os requisitos, as regras do projeto e os critérios de teste continuariam valendo. Independentemente do modelo, eu precisaria dar instruções claras, revisar as decisões e conferir se o código está de acordo com o desejado.
