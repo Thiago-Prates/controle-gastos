@@ -30,13 +30,13 @@ Resposta: 15 chamadas de ferramenta, contando cada operação executada dentro d
 M2.1 Quanto deu 0,10 + 0,20 no app?
 Resposta: Deu R$ 0,30, ao adicionar 0,10 e depois 0,20. O total é atualizado, somando os valores em centavos inteiros.
 M2.2 Por que 0.1 + 0.2 não dá exatamente 0.3 no JavaScript?
-Resposta: As aproximações fazem 0.1 + 0.2 resultar em                0.30000000000000004; somar centavos inteiros evita esse problema nos cálculos monetários usuais.
+Resposta: As aproximações fazem 0.1 + 0.2 resultar em 0.30000000000000004; somar centavos inteiros evita esse problema nos cálculos monetários usuais.
 
 ## Missão 3 · Remover
 M3.1 O agente mudou algo que você não pediu? O quê?
-Resposta:
+Resposta: Ele apenas alterou cmo solicitado, nenhuma lógica ou funcionalidade extra foi alterada.
 M3.2 Como o código sabe qual gasto remover?
-Resposta:
+Resposta: Cada botão envia o id único do seu gasto à função removerGasto. Ela usa filter para manter apenas os gastos com id diferente. No teste com três gastos de R$ 10,00, R$ 20,00 e R$ 30,00, removi o do meio e foi mantido o primeiro e o último, com total de R$ 40,00.
 
 ## Missão 4 · Filtrar
 M4.1 Qual foi o seu prompt da tentativa B?

@@ -15,6 +15,10 @@ function App() {
     setGastos((gastosAtuais) => [...gastosAtuais, novoGasto])
   }
 
+  function removerGasto(id) {
+    setGastos((gastosAtuais) => gastosAtuais.filter((gasto) => gasto.id !== id))
+  }
+
   return (
     <main className="pagina">
       <header className="cabecalho">
@@ -47,7 +51,7 @@ function App() {
               {gastos.length} {gastos.length === 1 ? 'item' : 'itens'}
             </span>
           </div>
-          <ListaGastos gastos={gastos} />
+          <ListaGastos gastos={gastos} aoRemover={removerGasto} />
         </section>
 
         <TotalGastos totalCentavos={totalCentavos} />

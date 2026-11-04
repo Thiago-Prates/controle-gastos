@@ -282,6 +282,33 @@
   font-weight: 650;
 }
 
+.botao-remover {
+  flex: 0 0 auto;
+  padding: 8px 10px;
+  border: 1px solid #e8cccc;
+  border-radius: 8px;
+  background: #fff;
+  color: #a12e2e;
+  font-size: 0.78rem;
+}
+
+.botao-remover:hover {
+  background: #fff2f2;
+}
+
+.botao-remover:focus-visible {
+  outline: 2px solid #a12e2e;
+  outline-offset: 3px;
+}
+
+.item-gasto {
+  flex-wrap: wrap;
+}
+
+.detalhes-gasto {
+  flex: 1 1 120px;
+}
+
 .cartao-total {
   display: flex;
   grid-column: 1 / -1;

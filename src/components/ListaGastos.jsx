@@ -1,4 +1,4 @@
-function ListaGastos({ gastos }) {
+function ListaGastos({ gastos, aoRemover }) {
   const formatadorMoeda = new Intl.NumberFormat('pt-BR', {
     style: 'currency',
     currency: 'BRL',
@@ -17,6 +17,14 @@ function ListaGastos({ gastos }) {
               </div>
             </div>
             <span className="valor-gasto">{formatadorMoeda.format(gasto.valor)}</span>
+            <button
+              type="button"
+              className="botao-remover"
+              aria-label={`Remover gasto: ${gasto.descricao}`}
+              onClick={() => aoRemover(gasto.id)}
+            >
+              Remover
+            </button>
           </li>
         ))}
       </ul>
