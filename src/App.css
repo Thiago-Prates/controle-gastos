@@ -184,6 +184,34 @@
   font-weight: 600;
 }
 
+.filtro-categoria {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.filtro-categoria label {
+  color: #435249;
+  font-size: 0.83rem;
+  font-weight: 600;
+}
+
+.filtro-categoria select {
+  width: 100%;
+  min-height: 46px;
+  padding: 0 13px;
+  border: 1px solid #dfe6e1;
+  border-radius: 9px;
+  background: #fff;
+  color: #293a31;
+}
+
+.filtro-categoria select:focus-visible {
+  outline: 2px solid #6b9b79;
+  outline-offset: 3px;
+}
+
 .lista-vazia {
   display: flex;
   min-height: 260px;

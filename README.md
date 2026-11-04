@@ -1,5 +1,17 @@
 # React + Vite
 
+## Gastos salvos no navegador
+
+O app salva automaticamente a lista completa na chave `controle-gastos` do
+localStorage, inclusive os gastos ocultos pelo filtro. Ao recarregar, recupera a
+lista e recalcula o total; o filtro volta para Todas.
+
+Os dados ficam neste navegador e perfil, separados por origem (protocolo,
+domínio e porta), sem sincronização entre dispositivos. Limpar os dados do site
+apaga os gastos. Falhas de leitura ou gravação são exibidas na página. Se os dados
+salvos estiverem inválidos, o app não os sobrescreve e avisa que novas alterações
+não serão salvas.
+
 This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
 Currently, two official plugins are available:

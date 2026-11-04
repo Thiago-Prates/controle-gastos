@@ -40,15 +40,15 @@ Resposta: Cada botão envia o id único do seu gasto à função removerGasto. E
 
 ## Missão 4 · Filtrar
 M4.1 Qual foi o seu prompt da tentativa B?
-Resposta:
+Resposta: "Planeje um filtro por categoria acima da lista de gastos, com as opções Todas, Alimentação, Transporte, Lazer e Outros. Inicie em Todas e mostre apenas os gastos da categoria selecionada, sem apagar o restante. Devem ser considerarado somente os gastos visíveis. Adicionar e remover gastos deve respeitar o filtro ativo. Mantenha a coerencia e o estilo visual atual."
 M4.2 Qual tentativa gerou o melhor plano, A ou B? Por quê?
-Resposta:
+Resposta: A tentativa B ficou melhor porque definiu posição, opções, comportamentos e outros. A tentativa A deixou essas decisões em aberto. Dessa maneira especificando nós garantimos a coerencia com a expectativa que temos sobre o filtro em si, diferente de deixar aberto para a escolha dele.
 
 ## Bônus · Salvar
 B.1 Onde o localStorage guarda os dados?
-Resposta:
+Resposta: No armazenamento local do perfil do navegador, porém em apenas um dispositivo, separado por origem do site. Os dados ficam como texto e normalmente persistem após recarregar ou fechar o navegador, até serem apagados.
 B.2 Por que os gastos não aparecem em outro navegador?
-Resposta:
+Resposta: Cada navegador e perfil possui seu próprio armazenamento. O localStorage não sincroniza os gastos entre navegadores ou dispositivos.
 
 ## Reflexão final
 R.1 Sem olhar o código, explique como um dos seus componentes recebe e altera os gastos.

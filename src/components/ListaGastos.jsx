@@ -1,4 +1,4 @@
-function ListaGastos({ gastos, aoRemover }) {
+function ListaGastos({ gastos, aoRemover, filtroAtivo }) {
   const formatadorMoeda = new Intl.NumberFormat('pt-BR', {
     style: 'currency',
     currency: 'BRL',
@@ -34,8 +34,12 @@ function ListaGastos({ gastos, aoRemover }) {
   return (
     <div className="lista-vazia">
       <span className="icone-vazio" aria-hidden="true">↗</span>
-      <p>Nenhum gasto por enquanto</p>
-      <span>Seus gastos adicionados aparecerão aqui.</span>
+      <p>{filtroAtivo ? 'Nenhum gasto nesta categoria' : 'Nenhum gasto por enquanto'}</p>
+      <span>
+        {filtroAtivo
+          ? 'Selecione outra categoria ou adicione um gasto nesta categoria.'
+          : 'Seus gastos adicionados aparecerão aqui.'}
+      </span>
     </div>
   )
 }
