@@ -1,4 +1,22 @@
-# Resultado da auditoria de idioma e acessibilidade
+# Resultado · Chrome DevTools
+
+Nome:
+
+| Categoria | Antes | Depois |
+| --- | --- | --- |
+| Acessibilidade | 95 | |
+| Boas práticas | 100 | |
+| SEO | 82 | |
+
+Lighthouse móvel, modo de navegação, em `http://localhost:5173/`. A avaliação anterior à correção desta atividade já inclui a correção de idioma descrita abaixo.
+
+Falhas: contraste insuficiente em sete elementos; ausência de meta description; `robots.txt` inválido. A categoria adicional Agentic Browsing recebeu 50, com falhas em `llms.txt` e no manifesto ARD.
+
+## O que foi corrigido (1 ou 2 linhas)
+
+## O que o agente fez aqui que o webfetch não faria? (1 ou 2 linhas)
+
+## Auditoria anterior de idioma e acessibilidade
 
 ## Constatação
 
