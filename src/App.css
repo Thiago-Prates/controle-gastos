@@ -28,7 +28,7 @@
 
 .descricao {
   margin: 14px 0 0;
-  color: #718078;
+  color: #68766f;
   font-size: 1rem;
 }
 
@@ -67,7 +67,7 @@
 
 .titulo-secao p {
   margin: 4px 0 0;
-  color: #859189;
+  color: #6d7770;
   font-size: 0.82rem;
 }
 
@@ -139,7 +139,7 @@
   position: absolute;
   top: 13px;
   left: 13px;
-  color: #849087;
+  color: #6e7870;
   font-size: 0.86rem;
 }
 
@@ -179,7 +179,7 @@
   padding: 6px 10px;
   border-radius: 20px;
   background: #f1f5f2;
-  color: #65756a;
+  color: #627267;
   font-size: 0.75rem;
   font-weight: 600;
 }
@@ -242,7 +242,7 @@
 
 .lista-vazia > span:last-child {
   margin-top: 6px;
-  color: #929c95;
+  color: #6f7771;
   font-size: 0.8rem;
 }
 
@@ -299,7 +299,7 @@
 .categoria-gasto {
   display: inline-block;
   margin-top: 4px;
-  color: #929c95;
+  color: #6f7771;
   font-size: 0.76rem;
 }
 
@@ -356,7 +356,7 @@
 
 .ajuda-total {
   margin: 5px 0 0;
-  color: #839087;
+  color: #67726b;
   font-size: 0.78rem;
 }
 

@@ -4,17 +4,25 @@ Nome:
 
 | Categoria | Antes | Depois |
 | --- | --- | --- |
-| Acessibilidade | 95 | |
-| Boas práticas | 100 | |
-| SEO | 82 | |
+| Acessibilidade | 95 | 100 |
+| Boas práticas | 100 | 100 |
+| SEO | 82 | 100 |
 
 Lighthouse móvel, modo de navegação, em `http://localhost:5173/`. A avaliação anterior à correção desta atividade já inclui a correção de idioma descrita abaixo.
 
 Falhas: contraste insuficiente em sete elementos; ausência de meta description; `robots.txt` inválido. A categoria adicional Agentic Browsing recebeu 50, com falhas em `llms.txt` e no manifesto ARD.
 
+Depois, o Lighthouse mobile manteve Agentic Browsing em 50: as verificações de `llms.txt` e ARD continuam pendentes. O servidor de desenvolvimento retorna o HTML da aplicação para esses caminhos inexistentes; não foram criados contratos de agentes inexistentes nem alterado o roteamento.
+
+Na inspeção de 375 × 667, a captura com um gasto não mostra quebra evidente. A análise adicional do agente foi interrompida antes do diagnóstico final, portanto não cobre todos os cenários móveis.
+
 ## O que foi corrigido (1 ou 2 linhas)
 
+O contraste dos textos foi melhorado, incluindo a categoria de um gasto; foram adicionados uma meta description e um `robots.txt` válido.
+
 ## O que o agente fez aqui que o webfetch não faria? (1 ou 2 linhas)
+
+Controlou o Chrome, interagiu com o formulário, emulou uma tela móvel e executou o Lighthouse sobre a página renderizada.
 
 ## Auditoria anterior de idioma e acessibilidade
 
